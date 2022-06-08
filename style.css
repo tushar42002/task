@@ -1,0 +1,374 @@
+
+* {
+     margin: 0;
+     padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3rem ;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  background: #f5f5f5;
+  height: fit-content ;
+  box-sizing: border-box;
+}
+
+
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* HEADER SECTION */
+#header {
+  background: #f0f0f0;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+}
+#header .logo {
+  margin-left: 1rem;
+  /* margin-bottom: 0; */
+  padding: 0 ;
+  height: 50px;
+}
+#header .logo img {
+  margin: 0 ;
+  height: 100%;
+  width: auto;
+}
+#header .icons {
+  display: flex;
+  gap: 1rem;
+  padding: 0 ;
+  width: fit-content;
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+#header .icons div {
+  border-radius: 50%;
+  background-color: #3683f0;
+  color: white;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* END HEADER */
+
+/* TOGGLER start */
+#toggler {
+  position: absolute;
+  display: fixed;
+  top: 10rem;
+  left: -180px;
+  min-width: 220px;
+  width: fit-content;
+  transition: all 0.8s ease;
+  z-index: 100;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-right: 1px solid rgba(0, 0, 0, 0.075);
+  background-color: white;
+  cursor: pointer;
+}
+#toggler:hover {
+  left: 0;
+  transition: 0.8s ease;
+}
+#toggler .head {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+
+  width: 91%;
+  padding: 11px;
+}
+#toggler  .fa-bars 
+{
+    transition: 0.7s ease;
+}
+#toggler .list {
+  margin: 1rem;
+  padding: 0.2rem;
+}
+#toggler hr {
+  width: 70%;
+}
+#toggler .list ul {
+  margin-right: 0.5rem;
+}
+#toggler .list ul li {
+
+  margin: 30px ;
+  text-align: center;
+
+  font-size: 1.2rem;
+
+}
+/* END OF TOGGLER */
+
+
+/* MAIN SECTION  starts*/
+section.width
+{
+  width: 80%;
+  margin: auto;
+}
+#main {
+  background: #f5f5f5;
+  position: relative;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: fit-content;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#main .head {
+  background: #0029ff;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+}
+#main .head h5 {
+  padding: 0.5rem 1rem;
+}
+#main h4 {
+  margin: 3rem auto ;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion.flex {
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.accordion-item {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 500px;
+  border-radius: 20px ;
+  height: fit-content;
+  width: 450px;
+}
+
+.accordion-item .accordion-header {
+  width: 100%;
+  height: 40px;
+  padding-top: 5px;
+  border-radius: 20px 20px 0 0 ;
+  background-color: black;
+  color: #f0f0f0;
+  text-align: center;
+}
+.accordion-item .contant-body1,
+.contant-body3,
+.contant-body4,
+.contant-body5,
+.contant-body6
+{
+  padding: 20px;
+}
+.accordion-item #three
+{
+   display: flex;
+   justify-content: center;
+}
+.accordion-item #collapseThree
+{
+  width: 100%
+}
+textarea#task3 {
+  border: none ;
+  outline: none ;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 325px;
+  margin: auto;
+}
+embed {
+  height: 100%;
+  width: 100%;
+}
+embed.pdf{
+  height: 100%;
+  width: 90%;
+}
+.dropdown1,
+.dropdown2,
+.dropdown3,
+.dropdown4,
+.dropdown5,
+.dropdown6
+{
+  display: block;
+  text-align: right;
+  font-size: 20px;
+  padding: 0px 20px;
+
+}
+.contant-body1.active,
+.contant-body2.active, 
+.contant-body3.active, 
+.contant-body4.active, 
+.contant-body5.active, 
+.contant-body6.active
+{
+  height: 0px;
+  display: none;
+  visibility: hidden;
+}
+.dropdown1.active, .dropdown2.active, .dropdown3.active, .dropdown4.active, .dropdown5.active, .dropdown6.active
+{
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  padding: 0px 20px;
+  width: 410px;
+  transform: rotate(180deg);
+}
+.nextbtn
+{
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+}
+/* END OF MAIN */
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media(max-width: 1200px)
+{
+  #header {
+    background: #f0f0f0;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1rem 5px ;
+  }
+  #header .logo {
+    margin-left: 5px;
+    padding: 0 ;
+    height: 40px;
+  }
+  section.width
+{
+  width: 80%;
+  margin: auto;
+}
+.accordion.flex {
+  justify-content: center;
+
+}
+#header .icons {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 ;
+  width: fit-content;
+  margin-right: 1.5rem;
+  margin-top: 0.3rem;
+  font-size: 10px;
+}
+#header  .user img{
+  width: 20px;
+  height: 20px;
+}
+.nextbtn
+{
+    right: 10px;
+}
+#header .icons div {
+  height: 20px;
+  width: 20px;
+}
+#header .logo img {
+  margin: 0 ;
+  height: 90%;
+  width: auto;
+}
+}
+
+
+
+
+@media (max-width: 800px) {
+  #main {
+    zoom: 90%;
+  }
+}
+@media (max-width: 600px) {
+  #main {
+    zoom: 80%;
+  }
+}
+@media (max-width: 500px) {
+  #main {
+    zoom: 70%;
+  }
+}
+@media (max-width: 375px) {
+  #main {
+    zoom: 70%;
+  }
+  #header .logo {
+    zoom: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .accordion-item {
+    width: 400px;
+  }
+  .dropdown1.active, .dropdown2.active, .dropdown3.active, .dropdown4.active, .dropdown5.active, .dropdown6.active
+  {
+    width: 350px;
+  }
+}
+@media (max-width: 450px) {
+  .accordion-item {
+    width: 350px;
+  }
+  .dropdown1.active, .dropdown2.active, .dropdown3.active, .dropdown4.active, .dropdown5.active, .dropdown6.active
+  {
+    width: 300px;
+  }
+}
+@media (max-width: 300px) {
+  .accordion-item {
+    width: 250px;
+    height: fit-content;
+  }
+  .dropdown1.active, .dropdown2.active, .dropdown3.active, .dropdown4.active, .dropdown5.active, .dropdown6.active
+  {
+    width: 200px;
+  }
+}
